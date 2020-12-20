@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  place-items: center;
+  background-color: black;
+}
+
+.appCard {
+  text-align: center;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 1)
+  );
+  padding: 100px;
+  background-image: url("https://p4.wallpaperbetter.com/wallpaper/623/388/984/night-in-the-trees-wallpaper-preview.jpg");
+  width: 50vw;
+  background-size: cover;
+  height: 100vh;
+  background-position: bottom;
+}
+.searchInfo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  background-color: lightgray;
+  border-radius: 10px;
+  padding: 20px;
+  border: none;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+.search {
+  margin-top: -10px;
+  border: none;
+  padding: 10px;
+  margin-left: 20px;
+  font-size: x-large;
+  background-color: lightgray;
+  width: 100%;
+  outline-style: none;
+}
+
+.weatherInfo {
+  display: flex;
+  margin-top: 20px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  color: white;
+}
+.condition {
+  margin-top: 20px;
+  overflow: hidden;
+  text-transform: capitalize;
+  width: 0%;
+  font-size: 50px;
+  font-style: italic;
+  animation: state 4s infinite ease-in-out;
+}
+@keyframes state {
+  0% {
+    width: 0%;
+    opacity: 0;
+  }
+  20% {
+    width: 30%;
+    opacity: 10;
+  }
+  40% {
+    width: 42%;
+    opacity: 0.2;
+  }
+  60% {
+    width: 47%;
+    opacity: 0;
+  }
+  80% {
+    width: 40%;
+    opacity: 0;
+  }
+  90% {
+    opacity: 5;
+  }
+  95% {
+    opacity: 8;
+  }
+  100% {
+    width: 10%;
+    opacity: 0;
+  }
+}
+.location {
+  margin-top: 10px;
+  margin-bottom: 8px;
+  font-size: large;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.temp {
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+  margin-top: 20px;
+  font-size: 40px;
+  font-weight: medium;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-style: none;
+}
